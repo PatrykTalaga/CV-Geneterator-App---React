@@ -2,7 +2,7 @@
   width: 100vw;
   height: 90vh;
   margin: auto;
-  padding: 5rem;
+  padding: 1rem 5rem;
   text-align: left;
 }
 
@@ -19,23 +19,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  border: solid 1px;
 }
 
 .cv {
   width: 70%;
   padding: 0 25px 0 150px;
   display: flex;
+  
 }
 
-.inputForm{
+.myGrid{
+  width: 100%;
   display: grid;
   grid-template-columns: .5fr 2fr;
   justify-content: l;
   row-gap: .75rem;
 }
 
-.adressLabel{
+.formPreview{
+  width: 100%;
+  display: flex;
+}
+.deleteButton{
+  height: 5rem;
+  margin-left: 30px;
+}
+
+.myGrid h2{
+  margin-right: 2rem;
+}
+
+.twoRows{
   grid-row: span 2;
+}
+
+.twoColumns{
+  grid-column: span 2;
 }
 
 .width100 {
@@ -60,4 +80,9 @@
 
 .resume{
   width: 70%;
+  margin-left: 25px;
+}
+
+ul {
+  list-style-type: none;
 }

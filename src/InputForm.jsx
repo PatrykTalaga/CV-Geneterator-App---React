@@ -12,14 +12,14 @@ function InputForm({
     if(personalData.status == false){
         return(
             <>
-                <form className="inputForm width100">
+                <form className="myGrid width100">
                     <label>Name: </label>
                     <input 
                         type="text" name="name"
                         defaultValue={personalData.name}
                         onChange={nameChange}
                      />
-                    <label className="adressLabel">Address: </label>
+                    <label className="twoRows">Address: </label>
                     <input 
                         type="text" name="address"
                         defaultValue={personalData.address}

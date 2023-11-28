@@ -8,7 +8,6 @@ function Cv({personalData}){
                 <p>e-mail: {personalData.eMail}</p>
                 <p>Phone number: {personalData.tel}</p>
             </div>
-            <div className="resume"></div>
         </>
     )
 }
