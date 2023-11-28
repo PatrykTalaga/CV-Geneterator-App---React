@@ -78,6 +78,7 @@ function App() {
 
 
         <div className='form'>
+          <h2>Personal Data</h2>
           <InputForm
             personalData={personalData}
             onClick={()=>setPersonalData({...personalData, status:!personalData.status})}
