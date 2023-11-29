@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { v4 as uuid } from "uuid"
+//import { v4 as uuid } from "uuid"
 import './App.css'
 import InputForm from './InputForm'
 import Cv from './Cv'
@@ -22,7 +22,7 @@ function App() {
     City: "WololoLand",
     From: "1111-11-11",
     End: "3343-11-11",
-    id: uuid()
+    id: crypto.randomUUID()
   })
 
   const[experience, setExperience] = useState([])
@@ -32,7 +32,7 @@ function App() {
       Description: "Wololo Wololo Wololo",
       From: "1222-22-22",
       End: "3433-01-01",
-      id: uuid()
+      id: crypto.randomUUID()
   })
 
 
@@ -45,7 +45,7 @@ function App() {
       City: "WololoLand",
       From: "1111-11-11",
       End: "3343-11-11",
-      id: uuid()
+      id: crypto.randomUUID()
   })}
 
   function handleClickExp(event){
@@ -57,7 +57,7 @@ function App() {
       Description: "Wololo Wololo Wololo",
       From: "1222-22-22",
       End: "3433-01-01",
-      id: uuid()
+      id: crypto.randomUUID()
   })}
 
   function deleteEduItem(id) {
